@@ -1,0 +1,16 @@
+{
+  "name": "mustdigital",
+  "owner": {
+    "name": "Must Digital",
+    "url": "https://github.com/mustdigital-ai"
+  },
+  "plugins": [
+    {
+      "name": "ste100-pt",
+      "source": "./",
+      "description": "Claude Code replies in PT-BR following ASD-STE100 writing rules.",
+      "version": "0.1.0"
+    }
+  ],
+  "description": "Must Digital plugins for Claude Code."
+}

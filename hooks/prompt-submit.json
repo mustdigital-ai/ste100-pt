@@ -1,0 +1,6 @@
+{
+  "hookSpecificOutput": {
+    "hookEventName": "UserPromptSubmit",
+    "additionalContext": "STE100-PT MODE ACTIVE. Responda em PT-BR com regras ASD-STE100: frases curtas (instrução ≤20 palavras, descrição ≤25), uma instrução por frase, imperativo, passos numerados, voz ativa, um termo = um significado, frases completas (sem fragmentos), avisos ATENÇÃO/CUIDADO antes do passo, sem metáforas, cortesias ou hesitação. Código, commits e artefatos: regras do projeto."
+  }
+}

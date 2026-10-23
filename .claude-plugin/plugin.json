@@ -1,0 +1,36 @@
+{
+  "name": "ste100-pt",
+  "version": "0.1.0",
+  "description": "Makes Claude Code reply in Brazilian Portuguese following ASD-STE100 (Simplified Technical English) writing rules: short sentences, one instruction per sentence, numbered steps, active voice, consistent terms.",
+  "author": {
+    "name": "Must Digital",
+    "url": "https://github.com/mustdigital-ai"
+  },
+  "repository": "https://github.com/mustdigital-ai/ste100-pt",
+  "license": "MIT",
+  "keywords": ["writing-style", "ste100", "simplified-technical-english", "portuguese", "pt-br", "hooks"],
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cat \"${CLAUDE_PLUGIN_ROOT}/hooks/session-start.json\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cat \"${CLAUDE_PLUGIN_ROOT}/hooks/prompt-submit.json\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
